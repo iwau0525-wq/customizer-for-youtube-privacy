@@ -41,9 +41,6 @@ The extension runs only on `https://www.youtube.com/`. It reads the page (for ex
 
 If this policy changes, the updated version will be published at this page.
 
-### Contact
-
-Please use the Issues page of this repository: https://github.com/iwau0525-wq/customizer-for-youtube-privacy/issues
 
 ---
 
@@ -81,7 +78,3 @@ Customizer for YouTube は、**個人情報や利用者のデータを収集・�
 ### 変更について
 
 このポリシーを変更する場合は、このページで新しい内容を公開します。
-
-### お問い合わせ
-
-このリポジトリの Issues ページからご連絡ください：https://github.com/iwau0525-wq/customizer-for-youtube-privacy/issues
