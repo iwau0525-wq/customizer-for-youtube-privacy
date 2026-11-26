@@ -2,7 +2,7 @@
 
 Customizer for YouTube（Chrome 拡張機能）
 
-Last updated / 最終更新日: 2026-11-26
+Last updated / 最終更新日: 2026-11-27
 
 ---
 
@@ -25,6 +25,8 @@ This data never leaves your device. It is not sent to the developer or to any th
 The extension runs only on `https://www.youtube.com/`. It reads the page (for example, video titles, channel names, view counts, and comments) only to hide, sort, and filter what is shown to you. This happens entirely in your browser; nothing is recorded or sent anywhere.
 
 If you turn on the optional "link preview" feature (off by default), hovering over a YouTube video link asks YouTube's own public oEmbed service (`https://www.youtube.com/oembed`) for that video's title, channel name, and thumbnail. Only the video ID is sent, only to YouTube, and without your YouTube cookies. Nothing is sent to the developer or any third party.
+
+If you turn on the optional "Dual-View mode" feature (off by default), the second video and its live chat are loaded directly from YouTube inside your browser: the regular YouTube video page (`https://www.youtube.com/watch`), or YouTube's privacy-enhanced embed (`https://www.youtube-nocookie.com/embed/`) if the page can't be used, plus YouTube's live chat page (`https://www.youtube.com/live_chat`). Thumbnails of suggested videos come from YouTube's image server (`i.ytimg.com`). Nothing is sent to the developer or any third party.
 
 ### What the extension does not do
 
@@ -65,6 +67,8 @@ Customizer for YouTube は、**個人情報や利用者のデータを収集・�
 この拡張機能は `https://www.youtube.com/` でだけ動きます。表示される内容を隠したり、並べ替えたり、絞り込んだりするために、ページの内容（動画のタイトル、チャンネル名、再生回数、コメントなど）を読み取ります。これはすべてブラウザーの中で行われ、記録したり外部に送ったりすることはありません。
 
 設定で「動画リンクのプレビュー」（初期設定はオフ）をオンにした場合に限り、YouTube の動画リンクにマウスを乗せると、その動画のタイトル・チャンネル名・サムネイルを YouTube 自身の公開サービス（oEmbed：`https://www.youtube.com/oembed`）に問い合わせます。送るのは動画の ID だけで、送り先は YouTube だけです。YouTube のログイン情報（Cookie）は送りません。開発者や第三者に送ることはありません。
+
+設定で「2画面モード」（初期設定はオフ）をオンにした場合、動画2とそのライブチャットは、お使いのブラウザー内で YouTube から直接読み込みます。動画2は通常の YouTube の動画ページ（`https://www.youtube.com/watch`）、使えない場合は YouTube のプライバシー強化モードの埋め込み（`https://www.youtube-nocookie.com/embed/`）、チャットは YouTube のライブチャットのページ（`https://www.youtube.com/live_chat`）です。候補の動画のサムネイルは YouTube の画像サーバー（`i.ytimg.com`）から表示します。開発者や第三者に情報を送ることはありません。
 
 ### 拡張機能がしないこと
 
