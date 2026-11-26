@@ -2,7 +2,7 @@
 
 Customizer for YouTube（Chrome 拡張機能）
 
-Last updated / 最終更新日: 2026-11-24
+Last updated / 最終更新日: 2026-11-26
 
 ---
 
@@ -16,7 +16,7 @@ To work, the extension saves the following **only in your own browser** (Chrome'
 
 - Your settings (for example, whether to hide Shorts, and your display language and theme)
 - Channels you have blocked and your blocked words
-- Searches you have saved and your recent searches (you can turn history off or clear it at any time in the settings)
+- Searches you have saved
 
 This data never leaves your device. It is not sent to the developer or to any third party. Uninstalling the extension deletes it. You can also delete it at any time with "Reset everything" in the settings.
 
@@ -24,10 +24,12 @@ This data never leaves your device. It is not sent to the developer or to any th
 
 The extension runs only on `https://www.youtube.com/`. It reads the page (for example, video titles, channel names, view counts, and comments) only to hide, sort, and filter what is shown to you. This happens entirely in your browser; nothing is recorded or sent anywhere.
 
+If you turn on the optional "link preview" feature (off by default), hovering over a YouTube video link asks YouTube's own public oEmbed service (`https://www.youtube.com/oembed`) for that video's title, channel name, and thumbnail. Only the video ID is sent, only to YouTube, and without your YouTube cookies. Nothing is sent to the developer or any third party.
+
 ### What the extension does not do
 
 - No analytics, tracking, or advertising
-- No remote servers and no remote code
+- No servers of the developer or any third party, and no remote code
 - No access to websites other than YouTube
 
 ### Permissions
@@ -54,7 +56,7 @@ Customizer for YouTube は、**個人情報や利用者のデータを収集・�
 
 - 設定（ショート動画を隠すかどうか、表示言語、色など）
 - ブロックしたチャンネルと NG ワード
-- 保存した検索と最近の検索（履歴は設定画面でいつでもオフにしたり消したりできます）
+- 保存した検索
 
 これらの情報は端末の外に出ることはなく、開発者や第三者に送られることもありません。拡張機能を削除すると消去されます。設定画面の「すべて最初の状態に戻す」でいつでも消すこともできます。
 
@@ -62,10 +64,12 @@ Customizer for YouTube は、**個人情報や利用者のデータを収集・�
 
 この拡張機能は `https://www.youtube.com/` でだけ動きます。表示される内容を隠したり、並べ替えたり、絞り込んだりするために、ページの内容（動画のタイトル、チャンネル名、再生回数、コメントなど）を読み取ります。これはすべてブラウザーの中で行われ、記録したり外部に送ったりすることはありません。
 
+設定で「動画リンクのプレビュー」（初期設定はオフ）をオンにした場合に限り、YouTube の動画リンクにマウスを乗せると、その動画のタイトル・チャンネル名・サムネイルを YouTube 自身の公開サービス（oEmbed：`https://www.youtube.com/oembed`）に問い合わせます。送るのは動画の ID だけで、送り先は YouTube だけです。YouTube のログイン情報（Cookie）は送りません。開発者や第三者に送ることはありません。
+
 ### 拡張機能がしないこと
 
 - アクセス解析、追跡、広告は一切ありません
-- 外部のサーバーへの通信や、外部から読み込んだプログラムの実行はありません
+- 開発者や第三者のサーバーへの通信や、外部から読み込んだプログラムの実行はありません
 - YouTube 以外のウェブサイトにはアクセスしません
 
 ### 権限について
