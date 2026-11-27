@@ -14,37 +14,36 @@ Customizer for YouTube does **not collect, transmit, sell, or share any personal
 
 To work, the extension saves the following **only in your own browser** (Chrome's local extension storage, `chrome.storage.local`):
 
-- Your settings (for example, whether to hide Shorts, and your display language and theme)
-- Channels you have blocked and your blocked words
-- Searches you have saved
+- Your settings (such as filter preferences, watch-page tools, display language, and theme)
+- Your blocked and whitelisted channels, blocked words (for videos, comments, and live chat), and whitelisted keywords
+- Your saved searches
 
-This data never leaves your device. It is not sent to the developer or to any third party. Uninstalling the extension deletes it. You can also delete it at any time with "Reset everything" in the settings.
+This data never leaves your device. It is never sent to the developer or any third party. Uninstalling the extension deletes it, and you can clear it anytime with "Reset everything" in the settings.
 
-### What the extension reads
+### What the extension reads and requests
 
-The extension runs only on `https://www.youtube.com/`. It reads the page (for example, video titles, channel names, view counts, and comments) only to hide, sort, and filter what is shown to you. This happens entirely in your browser; nothing is recorded or sent anywhere.
+The extension runs only on `https://www.youtube.com/`. It reads page content (such as video titles, channel names, view counts, comments, and live chat messages) solely to hide, sort, filter, and customize what is shown to you. All processing happens locally in your browser; nothing is recorded or sent anywhere.
 
-If you turn on the optional "link preview" feature (off by default), hovering over a YouTube video link asks YouTube's own public oEmbed service (`https://www.youtube.com/oembed`) for that video's title, channel name, and thumbnail. Only the video ID is sent, only to YouTube, and without your YouTube cookies. Nothing is sent to the developer or any third party.
+If you enable the optional **video link preview** feature (off by default), hovering over a YouTube video link or URL queries YouTube's public oEmbed endpoint (`https://www.youtube.com/oembed`) for that video's title, channel name, and thumbnail. Only the video ID is sent, only to YouTube, and without your YouTube cookies. Nothing is sent to the developer or any third party.
 
-If you turn on the optional "Dual-View mode" feature (off by default), the second video and its live chat are loaded directly from YouTube inside your browser: the regular YouTube video page (`https://www.youtube.com/watch`), or YouTube's privacy-enhanced embed (`https://www.youtube-nocookie.com/embed/`) if the page can't be used, plus YouTube's live chat page (`https://www.youtube.com/live_chat`). Thumbnails of suggested videos come from YouTube's image server (`i.ytimg.com`). Nothing is sent to the developer or any third party.
+If you enable the optional **Dual-View mode** feature (off by default), Video 2 and its chat are loaded directly from YouTube inside your browser: the standard YouTube watch page (`https://www.youtube.com/watch`), YouTube's privacy-enhanced embed (`https://www.youtube-nocookie.com/embed/`) if the watch page cannot be framed, and YouTube's live chat page (`https://www.youtube.com/live_chat`). Suggested video thumbnails load from YouTube's image server (`i.ytimg.com`). Nothing is sent to the developer or any third party.
 
 ### What the extension does not do
 
 - No analytics, tracking, or advertising
-- No servers of the developer or any third party, and no remote code
+- No developer or third-party servers, and no remote code
 - No access to websites other than YouTube
 
 ### Permissions
 
-- `storage`: saves your settings in your browser
+- `storage`: saves your settings locally in your browser
 - `activeTab`: opens a saved search from the popup in the current YouTube tab
-- `contextMenus`: adds right-click menu items such as "Block this channel"
-- Access to `https://www.youtube.com/*`: runs the extension's features on YouTube
+- `contextMenus`: adds right-click menu items on YouTube (such as "Block this channel" and Dual-View actions)
+- Access to `https://www.youtube.com/*`: runs the extension's features on YouTube pages
 
 ### Changes
 
-If this policy changes, the updated version will be published at this page.
-
+If this policy is updated, the revised version will be published on this page.
 
 ---
 
@@ -54,34 +53,34 @@ Customizer for YouTube は、**個人情報や利用者のデータを収集・�
 
 ### 拡張機能が保存するもの
 
-動作のために、次の情報を**お使いのブラウザーの中だけ**（Chrome の拡張機能用の保存領域 `chrome.storage.local`）に保存します。
+動作のために、次の情報を**お使いのブラウザーの中だけ**（Chrome の拡張機能用ローカル保存領域 `chrome.storage.local`）に保存します。
 
-- 設定（ショート動画を隠すかどうか、表示言語、色など）
-- ブロックしたチャンネルと NG ワード
+- 各種設定（検索フィルター、再生ページの機能、表示言語、テーマなど）
+- ブロック／ホワイトリストのチャンネル、動画・コメント・ライブチャット用の NG ワード、ホワイトリストのキーワード
 - 保存した検索
 
-これらの情報は端末の外に出ることはなく、開発者や第三者に送られることもありません。拡張機能を削除すると消去されます。設定画面の「すべて最初の状態に戻す」でいつでも消すこともできます。
+これらの情報が端末の外に出ることはなく、開発者や第三者に送信されることもありません。拡張機能を削除すると消去され、設定画面の「すべて最初の状態に戻す」からいつでも消去できます。
 
-### 拡張機能が読み取るもの
+### 拡張機能が読み取るもの・通信先
 
-この拡張機能は `https://www.youtube.com/` でだけ動きます。表示される内容を隠したり、並べ替えたり、絞り込んだりするために、ページの内容（動画のタイトル、チャンネル名、再生回数、コメントなど）を読み取ります。これはすべてブラウザーの中で行われ、記録したり外部に送ったりすることはありません。
+この拡張機能は `https://www.youtube.com/` 上でのみ動作します。表示の整理・並べ替え・絞り込みのために、ページ上の情報（動画タイトル、チャンネル名、再生回数、コメント、ライブチャットなど）を読み取りますが、処理はすべてブラウザー内で完結し、記録や外部送信は一切行いません。
 
-設定で「動画リンクのプレビュー」（初期設定はオフ）をオンにした場合に限り、YouTube の動画リンクにマウスを乗せると、その動画のタイトル・チャンネル名・サムネイルを YouTube 自身の公開サービス（oEmbed：`https://www.youtube.com/oembed`）に問い合わせます。送るのは動画の ID だけで、送り先は YouTube だけです。YouTube のログイン情報（Cookie）は送りません。開発者や第三者に送ることはありません。
+設定で**動画リンクのプレビュー**（初期設定はオフ）をオンにした場合に限り、YouTube の動画リンクや URL にカーソルを乗せると、タイトル・チャンネル名・サムネイルを取得するために YouTube の公開サービス（oEmbed：`https://www.youtube.com/oembed`）へ問い合わせます。送るのは動画 ID のみ、通信先は YouTube のみで、YouTube のログイン情報（Cookie）は送信しません。開発者や第三者に送ることはありません。
 
-設定で「2画面モード」（初期設定はオフ）をオンにした場合、動画2とそのライブチャットは、お使いのブラウザー内で YouTube から直接読み込みます。動画2は通常の YouTube の動画ページ（`https://www.youtube.com/watch`）、使えない場合は YouTube のプライバシー強化モードの埋め込み（`https://www.youtube-nocookie.com/embed/`）、チャットは YouTube のライブチャットのページ（`https://www.youtube.com/live_chat`）です。候補の動画のサムネイルは YouTube の画像サーバー（`i.ytimg.com`）から表示します。開発者や第三者に情報を送ることはありません。
+設定で**2画面モード**（初期設定はオフ）をオンにした場合、動画2とそのチャットはお使いのブラウザー内で YouTube から直接読み込みます。通常の動画ページ（`https://www.youtube.com/watch`）、フレーム表示できない場合は YouTube のプライバシー強化モードの埋め込み（`https://www.youtube-nocookie.com/embed/`）、チャットは YouTube のライブチャットページ（`https://www.youtube.com/live_chat`）を使用します。候補動画のサムネイルは YouTube の画像サーバー（`i.ytimg.com`）から取得します。開発者や第三者に情報を送ることはありません。
 
 ### 拡張機能がしないこと
 
-- アクセス解析、追跡、広告は一切ありません
-- 開発者や第三者のサーバーへの通信や、外部から読み込んだプログラムの実行はありません
+- アクセス解析、追跡、広告の挿入は一切ありません
+- 開発者や第三者のサーバーとの通信、外部スクリプトの実行はありません
 - YouTube 以外のウェブサイトにはアクセスしません
 
 ### 権限について
 
-- `storage`：設定をブラウザーの中に保存するため
+- `storage`：設定をお使いのブラウザー内に保存するため
 - `activeTab`：ポップアップから、保存した検索を今開いている YouTube のタブで開くため
-- `contextMenus`：右クリックメニューに「このチャンネルをブロック」などの項目を出すため
-- `https://www.youtube.com/*` へのアクセス：YouTube の上で拡張機能の機能を動かすため
+- `contextMenus`：YouTube 上の右クリックメニューに「このチャンネルをブロック」や2画面モードなどの項目を追加するため
+- `https://www.youtube.com/*` へのアクセス：YouTube ページ上で拡張機能の機能を動かすため
 
 ### 変更について
 
