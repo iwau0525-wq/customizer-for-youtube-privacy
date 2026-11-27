@@ -21,6 +21,8 @@ To work, the extension saves the following **only in your own browser** (Chrome'
 - Your settings (such as filter preferences, watch-page tools, display language, and theme)
 - Your blocked and whitelisted channels, blocked words (for videos, comments, and live chat), and whitelisted keywords
 - Your saved searches
+- Your saved Dual-View sets (the two video IDs and titles, layout, and sync settings)
+- Auto-detected subscribed channels (used only for the "Don't hide subscribed channels" filter; stored locally only and never transmitted)
 
 This data never leaves your device. It is never sent to the developer or any third party. Uninstalling the extension deletes it, and you can clear it anytime with "Reset everything" in the settings.
 
@@ -62,6 +64,8 @@ Customizer for YouTube は、**個人情報や利用者のデータを収集・�
 - 各種設定（検索フィルター、再生ページの機能、表示言語、テーマなど）
 - ブロック／ホワイトリストのチャンネル、動画・コメント・ライブチャット用の NG ワード、ホワイトリストのキーワード
 - 保存した検索
+- 保存した2画面セット（2つの動画の ID とタイトル、レイアウトや同期などの設定）
+- 自動検出した登録チャンネル（「登録チャンネルの動画は隠さない」用。端末内にのみ保存され、外部へ送信されることはありません）
 
 これらの情報が端末の外に出ることはなく、開発者や第三者に送信されることもありません。拡張機能を削除すると消去され、設定画面の「すべて最初の状態に戻す」からいつでも消去できます。
 
